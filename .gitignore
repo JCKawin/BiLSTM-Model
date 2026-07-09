@@ -1,0 +1,198 @@
+# =============================================================================
+# BiLSTM-Model — long-lived .gitignore
+# Python · TensorFlow · CustomTkinter · local data & trained artifacts
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Trained models & checkpoints (keep source package `model/` tracked)
+# -----------------------------------------------------------------------------
+models/
+**/checkpoints/
+**/saved_model/
+*.keras
+*.h5
+*.hdf5
+*.pb
+*.tflite
+*.lite
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.ckpt.*
+checkpoint
+*.joblib
+*.pkl
+*.pickle
+*.safetensors
+events.out.tfevents.*
+**/tensorboard/**
+**/logs/**
+**/runs/**
+**/wandb/
+**/mlruns/
+**/lightning_logs/
+
+# -----------------------------------------------------------------------------
+# Sensor / experiment data (regenerable; do not commit large CSVs)
+# -----------------------------------------------------------------------------
+sensor_data.csv
+*.csv
+!requirements*.txt
+data/
+datasets/
+raw/
+processed/
+exports/
+*.npz
+*.parquet
+*.feather
+*.arff
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.dll
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# -----------------------------------------------------------------------------
+# Virtual environments
+# -----------------------------------------------------------------------------
+.venv/
+venv/
+ENV/
+env/
+.env/
+.virtualenv/
+virtualenv/
+
+# -----------------------------------------------------------------------------
+# Environment / secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+.direnv/
+
+# -----------------------------------------------------------------------------
+# IDE / editors
+# -----------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+.ropeproject
+
+# -----------------------------------------------------------------------------
+# OS junk
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# -----------------------------------------------------------------------------
+# Jupyter / notebooks (outputs optional; uncomment if you want notebooks tracked)
+# -----------------------------------------------------------------------------
+# *.ipynb
+*/.ipynb_checkpoints/
+
+# -----------------------------------------------------------------------------
+# Packaging / build tools
+# -----------------------------------------------------------------------------
+*.manifest
+*.spec
+.python-version
+.pdm.toml
+.pdm-python
+.pdm-build/
+__pypackages__/
+poetry.lock
+Pipfile.lock
+uv.lock
+
+# -----------------------------------------------------------------------------
+# Misc local / temp
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+tmp/
+temp/
+.out/
+output/
+outputs/
+figures/
+plots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+!docs/**/*.png
+!docs/**/*.svg
+.gitattributes.bak
